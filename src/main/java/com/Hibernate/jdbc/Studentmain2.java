@@ -11,7 +11,8 @@ public class Studentmain2 {
 	public static void main(String[] args) {
 		// Querying and updating database
 
-		SessionFactory sf= new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
+		SessionFactory sf= new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).
+				buildSessionFactory();
 		Session session =sf.getCurrentSession();
 		
 		try {
